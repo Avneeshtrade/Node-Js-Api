@@ -1,0 +1,6 @@
+FROM mysql
+
+CMD ["mysqladmin", "-u${MYSQL_USER}", "-p${MYSQL_ROOT_PASSWORD}", "ping"]
+ENV MYSQL_ROOT_PASSWORD=root
+ENV MYSQL_USER=root
+ENV MYSQL_DATABASE=mydb

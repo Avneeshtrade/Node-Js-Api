@@ -1,12 +1,7 @@
-var getHandler= require('./getHandler')
-var postHandler=require('./postHandler')
-var deleteHandler=require('./deleteHandler')
-var putHandler=require('./putHandler')
+const Router = require('express').Router()
+const test = require('./test');
+
+Router.use('/test',test)
 
 
-module.exports={
-    getHandler,
-    postHandler,
-    putHandler,
-    deleteHandler
-}
+module.exports = Router
